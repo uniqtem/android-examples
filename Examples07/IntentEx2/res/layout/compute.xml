@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<TextView  android:id="@+id/text1compute"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="0"
+    /> 
+<EditText  android:id="@+id/edit1compute"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:numeric="integer"
+    android:text = "0"
+    android:hint="정수를 입력하세요."
+    />   
+<Button  android:id="@+id/btn1compute"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="+"
+    />
+<Button  android:id="@+id/btn2compute"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="-"
+    />
+<Button  android:id="@+id/btn3compute"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="*"
+    />
+<Button  android:id="@+id/btn4compute"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="/"
+    />    
+</LinearLayout>

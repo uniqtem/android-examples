@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center"
+  android:background="#000000">
+  <TextView 
+  	android:id="@+id/tv1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:textSize="35px"	
+  	android:layout_margin="20px"
+  />
+  <EditText 
+    android:id="@+id/et1"
+   	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:inputType="number"
+  	android:maxLength="2"
+  
+  	
+  />
+  <LinearLayout 
+    android:orientation="horizontal"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:gravity="center"
+  >
+  <Button 
+  	android:id="@+id/bto1"
+   	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="확인"
+  	android:textSize="35px"
+  	android:layout_margin="10px"
+  />
+    <Button 
+    android:id="@+id/bto2"
+   	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="취소"
+  	android:textSize="35px"
+  	android:layout_margin="10px"
+  />
+  
+  </LinearLayout>
+      
+</LinearLayout>

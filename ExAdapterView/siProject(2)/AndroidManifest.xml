@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="SiProject.rog" android:versionCode="1" android:versionName="1.0.0">
+	<uses-sdk android:minSdkVersion="7" />
+
+	<application android:icon="@drawable/allsbu" android:label="@string/app_name">
+		<activity android:name=".Intro" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".SiProjectActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".Alim" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".Alim2" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Setting" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Today" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Times" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+
+		<activity android:name=".Alimgle" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+
+		<activity android:name=".Alimhung" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+
+		<activity android:name=".Stretching" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".Str11" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Str1" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Str2" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Str3" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".Str4" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".BookLink" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name=".DaumapiActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".Jagates" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+		<receiver android:name=".ScreenReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.SCREEN_ON" />
+				<action android:name="android.intent.action.SCREEN_OFF" />
+				<action android:name="android.intent.action.TIME_SET" />
+				<!-- 안드로이드 시스템 부팅 액션 Boot_complete -->
+			</intent-filter>
+		</receiver>
+
+		<!-- 부팅완료에 대한 권한 얻기 -->
+		<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+		<!-- 부팅완료 Broadcast Receiver -->
+		<receiver android:name=".BootReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</receiver>
+
+		<!-- 시스템 알람매니저에 알람을 등록하는 서비스 -->
+		<!--  <service android:name="AlarmService"></service>
+		<service android:name=".Myservice">
+			<intent-filter>
+				<action android:name="com.hardrock.service.test" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</service>-->
+		<service android:name="Myservice"></service>  
+
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

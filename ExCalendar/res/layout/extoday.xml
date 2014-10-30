@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+<LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="0">
+  <TextView	android:id="@+id/texttoday"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:gravity="center"
+  	android:text="일정 관리" />
+</LinearLayout>
+
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1">
+
+  <ListView	android:id="@+id/list1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content" />
+</LinearLayout>
+
+<LinearLayout	
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="0">
+  <Button 	android:id="@+id/btnadd"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="일정 추가" />
+</LinearLayout>
+
+</LinearLayout>

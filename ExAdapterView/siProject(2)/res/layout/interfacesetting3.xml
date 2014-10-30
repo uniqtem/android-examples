@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center"
+  android:background="#000000">
+<TextView 
+	android:id="@+id/txv1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:textSize="35px"	
+  	android:layout_margin="20px"
+  	android:text="알림 형식을 선택하세요"/>
+
+<RadioGroup
+	android:id="@+id/radiogroup1"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+	android:orientation="horizontal"
+	android:checkedButton="@+id/radio2">
+	<RadioButton 
+		android:id="@+id/radio1"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="무 음       "
+    />
+    <RadioButton 
+		android:id="@id/radio2"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="진 동       "
+    />
+    <RadioButton 
+		android:id="@+id/radio3"
+		android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:text="알 람       "
+    /> 
+</RadioGroup>
+  <LinearLayout 
+    android:orientation="horizontal"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:gravity="center"
+  >
+  <Button 
+  	android:id="@+id/bto01"
+   	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="닫기"
+  	android:textSize="35px"
+  	android:layout_margin="10px"
+  />
+  
+  </LinearLayout>
+      
+</LinearLayout>

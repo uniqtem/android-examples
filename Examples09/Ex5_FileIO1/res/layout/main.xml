@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button  android:id="@+id/btnsave"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Save a file (package directory)"
+    />
+<Button  android:id="@+id/btnload"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Load a file (package directory)"
+    />
+<Button  android:id="@+id/btndelete"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Delete a file (package directory)"
+    /> 
+<Button  android:id="@+id/btnloadres"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Load a file (resources)"
+    />
+<Button  android:id="@+id/btnsavesd"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Save a file (SDCard)"
+    />
+<Button  android:id="@+id/btnloadsd"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Load a file (SDCard)"
+    />
+<EditText  android:id="@+id/text1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:hint="Input string."
+    />
+</LinearLayout>

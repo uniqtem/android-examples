@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+<TextView 
+	android:id="@+id/result"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+/>
+<EditText 
+	android:id="@+id/edittext"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	
+/>
+<Button 
+	android:id="@+id/ok"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="OK"/>
+<Button 
+	android:id="@+id/cancel"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Cancel"/>
+<LinearLayout 
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+><Button 
+	android:id="@+id/duhagi"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="+"
+/>
+.<Button 
+	android:id="@+id/duhagi1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="-"
+/>
+<Button 
+	android:id="@+id/duhagi2"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="*"
+/>
+<Button 
+	android:id="@+id/duhagi3"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:text="/"
+/></LinearLayout>
+
+</LinearLayout>

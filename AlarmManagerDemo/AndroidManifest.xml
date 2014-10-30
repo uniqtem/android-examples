@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.fyltech.android.AlarmManagerDemo"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".AlarmManagerDemo"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 시스템 알람매니저에서 알려주는 알람에 대한 Broadcast Receiver -->
+        <receiver android:name="com.fyltech.android.AlarmManagerDemo.AlarmReceiver">
+	        <intent-filter>
+	          <action android:name="android.intent.action.AlarmManagerDemo.RECEIVE_ALARM" />
+	          <action android:name="android.intent.action.AlarmManagerDemo.RECEIVE_ALARM_SNOOZE" />
+	          <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>        
+        </receiver>
+        
+        <!-- 부팅완료에 대한 권한 얻기 -->
+				<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+				
+				<!-- 부팅완료 Broadcast Receiver -->
+				<receiver android:name=".BootReceiver">
+				    <intent-filter>
+				       <action android:name="android.intent.action.BOOT_COMPLETED" />
+				       <category android:name="android.intent.category.LAUNCHER" />
+				    </intent-filter>
+				</receiver>
+				
+				<!-- 시스템 알람매니저에 알람을 등록하는 서비스 -->
+				<service android:name="AlarmService"></service>  
+
+    </application>
+</manifest>

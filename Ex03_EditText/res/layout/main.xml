@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+<TextView  
+	android:id="@+id/TextView1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="글자를 Edit에 치세요"
+    />
+<EditText
+	android:id="@+id/Edit1"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:hint="글자를 입력하세요"
+/>
+<Button
+	android:id="@+id/Button1"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text="click"
+/>
+<Button
+	android:id="@+id/Button2"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text="clear"
+/>
+<ImageButton
+	android:id="@+id/Button3"
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon"     
+    android:padding="10px"
+    android:maxWidth="70px"
+    android:maxHeight="70px"  
+/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="Pref_Screen" >
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="age"
+        android:summary="How old are you?"
+        android:title="Age" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="married"
+        android:title="Are you married?" />
+
+</PreferenceScreen>
